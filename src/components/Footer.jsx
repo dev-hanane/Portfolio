@@ -30,20 +30,20 @@ export default function Footer(){
 
   return(
     <footer className="bg-gradient-to-b from-gray-900 to-gray-950 text-gray-300 border-t border-white/10">
-      <div className="px-20 py-16">
+      <div className="px-4 md:px-20 py-16">
         
         {/* Header Section */}
         <div className="text-center mb-16">
           <div className="flex justify-center mb-4">
-            <div className="w-16 h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-2xl shadow-lg">
+            <div className="w-14 md:w-16 h-14 md:h-16 rounded-full bg-gradient-to-r from-blue-600 to-purple-600 flex items-center justify-center text-white font-bold text-xl md:text-2xl shadow-lg">
               H
             </div>
           </div>
-          <h2 className="text-2xl font-semibold text-white mb-2">Hanane Chaaouan</h2>
-          <p className="text-gray-400">Élève ingénieure en informatique</p>
+          <h2 className="text-xl md:text-2xl font-semibold text-white mb-2">Hanane Chaaouan</h2>
+          <p className="text-gray-400 text-sm md:text-base">Élève ingénieure en informatique</p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-12 mb-16">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-12 mb-16">
           
           {/* Contact Info */}
           <motion.div
@@ -149,7 +149,7 @@ export default function Footer(){
 
         {/* Bottom Section */}
         <div className="border-t border-white/10 pt-8 text-center">
-          <p className="text-gray-500">© 2024 Hanane Chaaouan. Tous droits réservés.</p>
+          <p className="text-gray-500 text-xs md:text-sm">© 2024 Hanane Chaaouan. Tous droits réservés.</p>
         </div>
 
       </div>
