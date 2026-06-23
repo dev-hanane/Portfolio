@@ -6,15 +6,15 @@ export default function About(){
 
 return(
 
-<section className="px-20 py-24 border-b border-transparent shadow-md">
+<section className="px-4 md:px-20 py-24 border-b border-transparent shadow-md">
 
 <div className="text-center mb-12 max-w-5xl mx-auto">
 
-<h2 className="text-5xl mb-4 mt-[-20px] font-semibold text-gray-800">
+<h2 className="text-3xl md:text-5xl mb-4 mt-[-20px] font-semibold text-gray-800">
 À Propos
 </h2>
 
-<p className="text-gray-500 mb-8 text-base">
+<p className="text-gray-500 mb-8 text-sm md:text-base">
 Qui suis-je.
 </p>
 
