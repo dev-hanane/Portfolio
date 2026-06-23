@@ -6,7 +6,7 @@ export default function Hero(){
 
 return(
 
-<section className="grid md:grid-cols-2 items-start px-20 py-12 pt-32 border-b border-transparent shadow-md">
+<section className="grid grid-cols-1 md:grid-cols-2 items-start px-4 md:px-20 py-12 pt-32 border-b border-transparent shadow-md">
 
 <motion.div
 initial={{opacity:0,y:40}}
@@ -14,21 +14,21 @@ animate={{opacity:1,y:0}}
 transition={{duration:1}}
 >
 
-<h1 className="text-4xl font-semibold mb-4 text-gray-800">
+<h1 className="text-2xl md:text-4xl font-semibold mb-4 text-gray-800">
 Salut, je suis <span className="bg-gradient-to-r from-blue-600 to-purple-600 text-transparent bg-clip-text">Hanane Chaaouan</span>.
 </h1>
 
-<h2 className="text-lg text-gray-500 mb-4">
+<h2 className="text-base md:text-lg text-gray-500 mb-4">
 Élève ingénieure en informatique
 </h2>
 
-<p className="text-gray-500 mb-6 leading-relaxed text-base">
+<p className="text-gray-500 mb-6 leading-relaxed text-sm md:text-base">
 passionnée par le développement et les nouvelles technologies.
 Compétente en développement informatique, et actuellement en préparation pour me
 spécialiser en Big Data et Cloud Computing.
 </p>
 
-<div className="grid grid-cols-4 gap-3 mb-6">
+<div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-6">
 <motion.div
 initial={{opacity:0,y:20}}
 animate={{opacity:1,y:0}}
@@ -106,10 +106,10 @@ Mon CV →
 initial={{opacity:0,x:40}}
 animate={{opacity:1,x:0}}
 transition={{duration:1}}
-className="flex justify-end items-start -mt-10"
+className="hidden md:flex justify-end items-start -mt-10"
 >
 <div className="relative" style={{width: '450px', height: '500px'}}>
-{/* Photo au centre */}
+{/* Photo au centre - Desktop */}
 <div className="absolute left-1/2 top-[42%] transform -translate-x-1/2 -translate-y-1/2">
 <img
 src="/WhatsApp Image 2026-06-22 at 10.09.35.png"
