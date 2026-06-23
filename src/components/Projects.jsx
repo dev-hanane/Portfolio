@@ -6,16 +6,16 @@ export default function Projects(){
   const [selectedProject, setSelectedProject] = useState(null)
 
   return(
-    <section className="px-20 py-24 border-b border-transparent shadow-md">
-      <h2 className="text-5xl mb-10 font-semibold text-gray-800">
+    <section className="px-4 md:px-20 py-24 border-b border-transparent shadow-md">
+      <h2 className="text-3xl md:text-5xl mb-10 font-semibold text-gray-800">
         Mes Projets
       </h2>
 
-      <p className="text-gray-500 mb-8 text-base">
+      <p className="text-gray-500 mb-8 text-sm md:text-base">
         Voici les projets que j'ai réalisés au cours de ma formation.
       </p>
 
-      <div className="grid md:grid-cols-3 gap-10">
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 md:gap-10">
         {projects.map((project) => (
           <Project
             key={project.id}
